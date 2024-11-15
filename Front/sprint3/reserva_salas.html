@@ -1,14 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas Salas</title>
-</head>
-<header class="reserva">
-    <h4> Reservas Senai</h4>
-</header>
-<body>
-    
-</body>
-</html>
+<form id="formulario_reserva">
+  <label>Data</label>
+  <input type="date" id="data" required>
+  
+  <label>Horário</label>
+  <input type="time" id="horario" required>
+
+  <label>Sala</label>
+  <select id="sala">
+    <option value="Sala 1">Sala 1</option>
+    <option value="Sala 2">Sala 2</option>
+    <!-- Adicione mais opções conforme necessário -->
+  </select>
+  
+  <button type="submit">Verificar disponibilidade</button>
+</form>
+
+<!-- Botão para confirmar a reserva -->
+<button id="confirmar_reserva" onclick="confirmarReserva()" disabled>Confirmar Reserva</button>
