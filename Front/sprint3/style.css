@@ -1,87 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #acacac6c;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+/* Define o tamanho da imagem da logo */
+header .logo img{
+    width: 130px;
+    height: 40px;
+    margin-right: 30px; /* Espaço entre a logo e o título */
+
+  }
+
+/* Barra lateral */
+.sidebar {
+  width: 100px;
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* Perfil */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Forma do perfil */
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.logout {
+  margin-top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-    font-size: 18px;
-    padding: 10px;
-    margin-top: 0px;
+  width: 100%;
+  background-color: #ff0000;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
 }
 
-.reserva {
-    background-color: red;
-    color: white; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centralizar o texto */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-section img{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 225px;
+h2 {
+  font-size: 20px;
+  color: black;
 }
 
-section{
-    border: 1px solid black;
-    align-content: center;
-    border-radius: 10px;
-    width: 320px;
-    height: 465px;
-    background-color: #f7f7f7;
-    margin-top:20px;
+.form-container {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-section p{
-    font-size: 15px;
+form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(53, 53, 53);
-    font-size: 15px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: black;
 }
 
-section input{
-    border: 1px solid rgba(28, 27, 27, 0.404);
-    width: 75%;
-    height: 36px;
-    font-size: 18px;
-    border-radius: 5px;
-    margin-bottom: 18px;
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
-    background-color: #F0F0F0;
-    
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-
-#botao_cadastre-se {
-    width: 75%;
-    background-color: #b1b1b1;
-    height: 36px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-.principal{
-    display: flex;
-    justify-content: center;
-}
-
-.login{
-    margin: 25px;
-}
-
-footer{
-    text-align: center;
-    bottom: 30px;
-    position: center;
-    width: 100%;
-    font-size: 15px;
+button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
 }
